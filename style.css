@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Suise_L;
+  src: url('fonts/SuisseIntl-Light.ttf');
+}
+
+@font-face {
+  font-family: Suise_r;
+  src: url('fonts/SuisseIntl-Regular.ttf');
+}
+
+@font-face {
+  font-family: Suise_m;
+  src: url('fonts/Suisse-Intl-Medium.ttf');
+}
+
+
+
+body{
+  font-family: Suise_r;
+  background-color: white;
+}
+
+
+main{
+   max-width: 1200px; 
+   margin: 0 auto;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+} 
+
+.header a{
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+
+
+}
+
+.logo,.menu{
+  
+  
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+} 
+
+.logo{
+  line-height: 0.9;
+}
+
+.menu a{
+  text-decoration: none;
+  color: white;
+
+  
+}
+.menu{
+  display: flex; 
+  flex-direction: column;
+  
+}
+
+
+
+
+
+.container-header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 1rem;
+  mix-blend-mode: difference;
+}
+
+
+.container{
+  padding: 1rem;
+}
+
+
+.txt-home{
+   width: 100%; 
+   margin-top: 5rem;
+}
+.txt-home > *{
+  font-family: Suise_L;
+}
+
+
+.page-transition{
+  position: fixed;
+  inset: 0;
+  transform: translateY(100%);
+  background-color: #111111;
+  z-index: 1000;
+}
+
+
